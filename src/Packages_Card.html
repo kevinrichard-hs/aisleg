@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+    />
+</head>
+  <body>
+    <!--Selected Package card-->
+    <div
+      class="w-[368px] rounded-3xl border-gray-200 border-[1px] border-solid box-border max-w-full flex flex-col items-start justify-start pb-3.5 gap-8 leading-[normal] tracking-[normal]"
+    >
+      <div
+        class="self-stretch flex flex-col items-start justify-start relative gap-4"
+      > 
+        <!-- Package added banner-->
+        <div
+          class="py-2 px-5 bg-mariner-700 w-[368px] absolute top-[0px] left-[0px] rounded-t-2xl rounded-b-none flex flex-row items-center justify-center z-[1]"
+        >
+          <div
+            class="relative text-sm tracking-[0.1px] font-roboto text-white text-center inline-block "
+            >Package added</div
+          >
+        </div>
+
+        <!-- Package image-->
+        <img
+          class="self-stretch relative rounded-t-2xl rounded-b-none max-w-full overflow-hidden max-h-60 object-cover"
+          loading="lazy"
+          alt=""
+          src="/public/image-1@2x.png"
+        /> 
+        
+      </div>
+      
+      <div
+        class="self-stretch flex flex-col items-start justify-start py-0 px-6 gap-4 text-center text-base text-gray-900 font-roboto"
+      >
+        <div class="flex flex-col items-start justify-start gap-1 text-left">
+          <div class="relative">Luxe Elopement Soiree</div>
+            <p
+              class="relative text-sm tracking-[0.1px] text-gray-500 text-center inline-block min-w-[64px]"
+              >25 Guests</p
+            >
+          </div>
+        <div
+          class="flex flex-row items-end justify-end gap-2 text-3xl text-gray-800"
+        >
+          <div
+            class="relative tracking-[0.1px] inline-block min-w-[88px] whitespace-nowrap"
+          >
+            $7,300
+          </div>
+          <div
+            class="flex flex-row items-end justify-end pt-4 px-0 pb-0.5 text-sm text-gray-500"
+          >
+            <div class="relative tracking-[0.1px] inline-block whitespace-nowrap">
+              total
+            </div>
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-col items-start justify-start gap-3"
+        >
+          <div
+            class="self-stretch border-gray-200 border-t-[1px] border-solid flex flex-col items-start justify-start pt-1.5 pb-2 pl-0 pr-[135px] gap-2"
+          >
+            <div
+              class="text-sm text-gray-500 relative tracking-[0.1px] text-[inherit] inline-block min-w-[54px]"
+              >Services</div
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-2 text-gray-800"
+            >
+              <div class="flex flex-row items-center justify-center gap-1">
+                <img
+                  class="h-4 w-4 relative"
+                  loading="lazy"
+                  alt=""
+                  src="/public/check.svg"
+                />
+
+                <div
+                  class="relative tracking-[0.1px] inline-block min-w-[18px]"
+                >
+                  DJ <!--Package Summary Details-->
+                </div>
+              </div>
+              <div class="flex flex-row items-center justify-center gap-1">
+                <img
+                  class="h-4 w-4 relative min-h-[16px]"
+                  loading="lazy"
+                  alt=""
+                  src="/public/check.svg"
+                />
+
+                <div
+                  class="relative tracking-[0.1px] inline-block min-w-[73px]"
+                >
+                  Booth Light
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Link to popup of PackageViewMore_Modal-->
+          <a 
+            class="[text-decoration:underline] relative tracking-[0.1px] text-gray-800 inline-block"
+            >View more</a
+          >
+        </div>
+        
+      </div>
+      <button
+          class="mx-4 relative cursor-pointer px-4 w-[336px] self-stretch  rounded-[20px] bg-mariner-700 flex flex-col items-center justify-center min-h-[36px]"
+         >
+          <p
+            class="relative text-base tracking-[0.1px] leading-[20px] font-roboto font-normal text-white gray-800 text-center"
+          >
+           Remove from booking
+          </p>
+      </button>
+    </div>  
+
+<!--Unselected Package card-->
+    <div
+      class="w-[368px] rounded-3xl border-gray-200 border-[1px] border-solid box-border max-w-full flex flex-col contents-center items-center justify-center pb-3.5 gap-8 leading-[normal] tracking-[normal]"
+    >
+      <div
+        class="self-stretch flex flex-col items-start justify-start relative gap-4"
+      >
+        <img
+          class="self-stretch relative rounded-t-2xl rounded-b-none max-w-full overflow-hidden max-h-60 object-cover"
+          loading="lazy"
+          alt=""
+          src="/public/image-1@2x.png"
+        />
+      </div>
+      <div
+        class="self-stretch flex flex-col items-start justify-start py-0 px-6 gap-4 text-center text-base text-gray-900 font-roboto"
+      >
+        <div class="flex flex-col items-start justify-start gap-1 text-left">
+          <div class="relative">Luxe Elopement Soiree</div>
+          <p
+            class="relative text-sm tracking-[0.1px] text-gray-500 text-center inline-block min-w-[64px]"
+            >25 Guests</p
+          >
+        </div>
+        <div
+          class="flex flex-row items-end justify-end gap-2 text-3xl text-gray-800"
+        >
+          <div
+            class="relative tracking-[0.1px] inline-block min-w-[88px] whitespace-nowrap"
+          >
+            $7,300
+          </div>
+          <div
+            class="flex flex-row items-end justify-end pt-4 px-0 pb-0.5 text-sm text-gray-500"
+          >
+            <div class="relative tracking-[0.1px] inline-block whitespace-nowrap">
+              total
+            </div>
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-col items-start justify-start gap-3"
+        >
+          <div
+            class="self-stretch border-gray-200 border-t-[1px] border-solid flex flex-col items-start justify-start pt-1.5 pb-2 pl-0 pr-[135px] gap-2"
+          >
+            <div
+              class="text-sm text-gray-500 relative tracking-[0.1px] text-[inherit] inline-block min-w-[54px]"
+              >Services</div
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-2 text-gray-800"
+            >
+              <div class="flex flex-row items-center justify-center gap-1">
+                <img
+                  class="h-4 w-4 relative"
+                  loading="lazy"
+                  alt=""
+                  src="/public/check.svg"
+                />
+
+                <div
+                  class="relative tracking-[0.1px] inline-block min-w-[18px]"
+                >
+                  DJ <!--Package Summary Details-->
+                </div>
+              </div>
+              <div class="flex flex-row items-center justify-center gap-1">
+                <img
+                  class="h-4 w-4 relative min-h-[16px]"
+                  loading="lazy"
+                  alt=""
+                  src="/public/check.svg"
+                />
+
+                <div
+                  class="relative tracking-[0.1px] inline-block min-w-[73px]"
+                >
+                  Booth Light
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="[text-decoration:underline] relative tracking-[0.1px] text-gray-800 inline-block"
+            >View more</a
+          >
+        </div>
+        
+      </div>
+      
+      <button
+          class="mx-4 relative cursor-pointer px-4 w-[336px] self-stretch  rounded-[20px] bg-mariner-100 flex flex-col items-center justify-center min-h-[36px]"
+         >
+          <p
+            class="relative text-base tracking-[0.1px] leading-[20px] font-roboto font-normal text-gray-800 text-center"
+          >
+           Add to booking
+          </p>
+      </button>
+    </div>
+
+  </body>
+</html>
+
